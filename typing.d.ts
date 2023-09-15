@@ -1,7 +1,7 @@
 import { Models } from "appwrite";
 
 interface Board {
-    columns:Map<TypedColumn,string>
+    columns:Map<TypedColumn,Column>
 }
 type TypedColumn='todo'|'inprogress'|'done';
 interface Column{
