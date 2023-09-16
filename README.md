@@ -1,34 +1,101 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Task Organiser 
 
-First, run the development server:
+### [Live Site](https://task-organiser-btym75cab-priyanshu0007.vercel.app/)
+
+![scre](https://github.com/Priyanshu0007/task-organiser/blob/main/public/task.png?raw=true "Optional title")
+
+
+## Description
+
+Step into the future of task organization and cloud storage with our innovative landing page powered by Next.js. Seamlessly manage your tasks and access your files from anywhere with our user-friendly platform. With a sleek and responsive design, our website offers an intuitive experience on all devices, while Next.js technology ensures lightning-fast load times and real-time data synchronization. Whether you're organizing personal tasks or collaborating with a team, our integrated cloud storage feature simplifies file sharing and accessibility. Elevate your productivity and stay organized effortlessly – welcome to the future of task management and cloud storage.
+## Built with
+
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat-square&logo=typescript&logoColor=white)
+
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat-square&logo=react&logoColor=%2361DAFB)
+
+![Next JS](https://img.shields.io/badge/Next-black?style=flat-square&logo=next.js&logoColor=white)
+
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat-square&logo=tailwind-css&logoColor=white)
+
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=flat-square&logo=vercel&logoColor=white)
+
+![Zustand](https://img.shields.io/badge/zustand-%23000000.svg?style=flat-square&logo=zustand&logoColor=white)
+
+![Appwrite](https://img.shields.io/badge/appwrite-%23000000.svg?style=flat-square&logo=appwrite&logoColor=white)
+
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
+
+
+
+
+
+## Deployment
+
+To deploy this project run
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  npm run deploy
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Responsive and beautiful UI
+- Create and delete task 
+- Add image with task
+- Data store in cloud
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Environment Variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To run this project, you will need to add the following environment variables to your .env file
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+`NEXT_PUBLIC_APPWRITE_PROJECT_ID`
 
-## Deploy on Vercel
+`NEXT_PUBLIC_DATABASE_ID`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`NEXT_PUBLIC_TODOS_COLLECTION_ID`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`OPENAI_API_KEY`
+
+`NEXT_PUBLIC_BUCKET`
+
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/Priyanshu0007/task-organiser.git
+```
+
+Go to the project directory
+
+```bash
+  cd task-organiser 
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm run test
+```
+
