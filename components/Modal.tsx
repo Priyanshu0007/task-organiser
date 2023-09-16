@@ -1,5 +1,5 @@
 'use client'
-import { Fragment, useRef, FormEvent } from 'react'
+import React, { Fragment, FormEvent } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
 import { useModalStore } from '@/store/ModalStore'
 import { useBoardStore } from '@/store/BoardStore'
@@ -8,7 +8,7 @@ import Image from 'next/image'
 import { PhotoIcon } from '@heroicons/react/24/solid'
 
 function Modal() {
-    const imagePickerRef=useRef<HTMLElement>(null);
+    const imagePickerRef=React.useRef() as React.MutableRefObject<HTMLInputElement>;
     const [isOpen,closeModal]=useModalStore((state)=>[state.isOpen,state.closeModal])
     const [addTask,newTaskInput,setNewTaskInput,setImage,image,newTaskType]=useBoardStore((state)=>[state.addTask,state.newTaskInput,state.setNewTaskInput,state.setImage,state.image,state.newTaskType]);
     const handleSubmit=(e:FormEvent<HTMLFormElement>)=>{
@@ -57,7 +57,7 @@ function Modal() {
                     <PhotoIcon className='h-6 w-6 mr-2 inline-block' />
                 </button>
                 {image && <Image src={URL.createObjectURL(image)} alt='Upload Image' width={200} height={200} className='w-full h-44 object-cover mt-2 filter hover:grayscale transition-all duration-150 cursor-not-allowed' onClick={()=>setImage(null)}/>}
-                <input type='file' ref={imagePickerRef} hidden onChange={(e)=>{if(!e.target.files![0].type.startsWith("image/")){return};setImage(e.target.files![0]);}}/>
+                <input type='file' ref={imagePickerRef } hidden onChange={(e)=>{if(!e.target.files![0].type.startsWith("image/")){return};setImage(e.target.files![0]);}}/>
             </div>
             <div className='mt-2'>
                 <button type='submit' className='inline-flex justift-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 disabled:bg-gray-100 disabled:text-gray-300 disabled:cursor-not-allowed'>
