@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-[#F5F6F8]'>
+      <body className='bg-gradient-to-br from-blue-100 via-blue-300 to-blue-500 min-h-screen'>
         {children}
         <Modal/>
       </body>
