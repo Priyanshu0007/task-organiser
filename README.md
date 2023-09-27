@@ -1,7 +1,7 @@
 
 # Task Organiser 
 
-### [Live Site](https://task-organiser-btym75cab-priyanshu0007.vercel.app/)
+### [Live Site](https://task-organiser.vercel.app/)
 
 ![scre](https://github.com/Priyanshu0007/task-organiser/blob/main/public/task.png?raw=true "Optional title")
 
